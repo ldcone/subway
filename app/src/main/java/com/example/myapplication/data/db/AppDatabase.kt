@@ -1,12 +1,13 @@
-package com.example.myapplication.data.db.entity
+package com.example.myapplication.data.db
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.myapplication.data.db.entity.mapper.StationEntity
-import com.example.myapplication.data.db.entity.mapper.StationSubwayCrossRefEntity
-import com.example.myapplication.data.db.entity.mapper.SubwayEntity
+import com.example.myapplication.data.db.entity.StationDao
+import com.example.myapplication.data.db.entity.StationEntity
+import com.example.myapplication.data.db.entity.StationSubwayCrossRefEntity
+import com.example.myapplication.data.db.entity.SubwayEntity
 
 @Database(
     entities = [StationEntity::class, SubwayEntity::class, StationSubwayCrossRefEntity::class],
@@ -17,7 +18,7 @@ abstract class AppDatabase:RoomDatabase() {
     companion object{
         private const val DATABASE_NAME = "station.db"
 
-        fun build(context:Context):AppDatabase =
+        fun build(context:Context): AppDatabase =
             Room.databaseBuilder(context, AppDatabase::class.java, DATABASE_NAME).build()
     }
 }

@@ -1,7 +1,7 @@
 package com.example.myapplication.data.api
 
-import com.example.myapplication.data.db.entity.mapper.StationEntity
-import com.example.myapplication.data.db.entity.mapper.SubwayEntity
+import com.example.myapplication.data.db.entity.StationEntity
+import com.example.myapplication.data.db.entity.SubwayEntity
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.coroutines.tasks.await
 

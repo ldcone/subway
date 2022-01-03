@@ -1,4 +1,4 @@
-package com.example.myapplication.data.db.preference
+package com.example.myapplication.data.preference
 
 import android.content.SharedPreferences
 import androidx.core.content.edit

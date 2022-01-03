@@ -1,4 +1,4 @@
-package com.example.myapplication.data.db.preference
+package com.example.myapplication.data.preference
 
 interface PreferenceManager {
     fun getLong(key:String):Long?

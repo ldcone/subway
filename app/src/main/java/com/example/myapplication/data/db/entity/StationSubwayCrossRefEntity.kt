@@ -1,4 +1,4 @@
-package com.example.myapplication.data.db.entity.mapper
+package com.example.myapplication.data.db.entity
 
 import androidx.room.Entity
 

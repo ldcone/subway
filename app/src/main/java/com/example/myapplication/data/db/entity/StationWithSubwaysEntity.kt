@@ -1,10 +1,10 @@
-package com.example.myapplication.data.db.entity.mapper
+package com.example.myapplication.data.db.entity
 
 import androidx.room.Embedded
 import androidx.room.Junction
 import androidx.room.Relation
 
-data class StationWithSubwayEntity (
+data class StationWithSubwaysEntity (
     @Embedded val station: StationEntity,
     @Relation(
         parentColumn = "stationName",
